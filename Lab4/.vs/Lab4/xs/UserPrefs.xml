@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{85334C50-B5EE-9F24-D65F-52659F4C4D93}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Target.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/ParticleSystems/Scripts/ExplosionPhysicsForce.cs">
     <Files>
-      <File FileName="Assets/GunScript.cs" Line="30" Column="43" />
-      <File FileName="Assets/Target.cs" Line="1" Column="1" />
+      <File FileName="Assets/GunScript.cs" Line="41" Column="88" />
+      <File FileName="Assets/Target.cs" Line="31" Column="29" />
+      <File FileName="Assets/Standard Assets/ParticleSystems/Scripts/ExplosionPhysicsForce.cs" Line="21" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab4" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Target.cs" selected="True" />
+              <Node name="Standard Assets" expanded="True">
+                <Node name="ParticleSystems" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="ExplosionPhysicsForce.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

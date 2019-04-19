@@ -6,7 +6,9 @@ public class GunScript : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
 
-    public Camera fpsCam; 
+    public Camera fpsCam;
+    public GameObject impactEffect;
+    //public ParticleSystem muzzleFlash; 
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
+        //muzzleFlash.Play();
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -34,6 +37,8 @@ public class GunScript : MonoBehaviour
             {
                 target.TakeDamage(damage); 
             }
+
+            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); 
         }
     }
 }

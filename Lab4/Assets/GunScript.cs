@@ -33,9 +33,15 @@ public class GunScript : MonoBehaviour
             Debug.Log(hit.transform.name);
 
            Target target = hit.transform.GetComponent<Target>();
-            if(target != null)
+           easyTarget easTarget = hit.transform.GetComponent<easyTarget>();
+            if (target != null)
             {
                 target.TakeDamage(damage); 
+            }
+
+            if (easTarget != null)
+            {
+                easTarget.TakeDamage(damage);
             }
 
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); 

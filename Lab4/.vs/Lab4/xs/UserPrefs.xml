@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{85334C50-B5EE-9F24-D65F-52659F4C4D93}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GunScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sphere.cs">
     <Files>
-      <File FileName="Assets/easyTarget.cs" Line="8" Column="1" />
-      <File FileName="Assets/GunScript.cs" Line="41" Column="88" />
+      <File FileName="Assets/easyTarget.cs" Line="16" Column="6" />
+      <File FileName="Assets/GunScript.cs" Line="11" Column="36" />
+      <File FileName="Assets/Target.cs" Line="1" Column="1" />
+      <File FileName="Assets/Menu.cs" Line="7" Column="2" />
+      <File FileName="Assets/Sphere.cs" Line="8" Column="30" />
+      <File FileName="Assets/Cube.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +18,7 @@
                   <Node name="Scripts" expanded="True" />
                 </Node>
               </Node>
-              <Node name="GunScript.cs" selected="True" />
+              <Node name="Sphere.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -23,9 +27,11 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="03f8fb37-4a77-4958-b1bf-251f3e0fe539" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="31e50459-ebd8-4c70-9551-ac9b2b13e0bc" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <RunToCursorBreakpoint file="/Users/gianlucariverabiagioni/Documents/UVG/Unity/Lab4Unity/Lab4/Assets/Sphere.cs" relfile="Assets/Sphere.cs" line="28" column="50" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

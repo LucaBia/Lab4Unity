@@ -1,5 +1,6 @@
 ﻿
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunScript : MonoBehaviour
 {
@@ -8,11 +9,15 @@ public class GunScript : MonoBehaviour
 
     public Camera fpsCam;
     public GameObject impactEffect;
+
+    public int contTarget = 0;
+    public Text countText;
+
     //public ParticleSystem muzzleFlash; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetCountText();
     }
 
     // Update is called once per frame
@@ -36,15 +41,27 @@ public class GunScript : MonoBehaviour
            easyTarget easTarget = hit.transform.GetComponent<easyTarget>();
             if (target != null)
             {
-                target.TakeDamage(damage); 
+                target.TakeDamage(damage);
+                if (target.health == 0)
+                {
+                    this.contTarget++;
+                    countText.text = "Targets Destroyed: " + contTarget.ToString();
+                }
             }
 
             if (easTarget != null)
             {
                 easTarget.TakeDamage(damage);
+                this.contTarget++;
+                countText.text = "Targets Destroyed: " + contTarget.ToString();
             }
 
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); 
         }
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Targets Destroyed: " + contTarget.ToString();
     }
 }

@@ -1,0 +1,2 @@
+/Users/gianlucariverabiagioni/Documents/UVG/Unity/Lab4Unity/Lab4/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/gianlucariverabiagioni/Documents/UVG/Unity/Lab4Unity/Lab4/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

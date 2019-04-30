@@ -38,7 +38,12 @@ public class Sphere : MonoBehaviour
         RaycastHit hitInfo;
 
         if (Physics.Raycast(myRay, out hitInfo))
+        {
             rBody.AddForce(-hitInfo.normal * force, ForceMode.Impulse);
+            AudioSource sound = GetComponent<AudioSource>();
+            sound.Play();
+        }
+            
     }
 
 }

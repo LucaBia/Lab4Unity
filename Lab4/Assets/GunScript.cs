@@ -55,8 +55,9 @@ public class GunScript : MonoBehaviour
                 this.contTarget++;
                 countText.text = "Targets Destroyed: " + contTarget.ToString();
             }
-
-            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); 
+            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            AudioSource sound = GetComponent<AudioSource>();
+            sound.Play();
         }
     }
 
